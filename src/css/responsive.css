@@ -1,0 +1,195 @@
+@media (min-width: 320px) and (max-width: 820px) and (orientation: portrait) {
+    body {
+        padding: 9% 5% 0;
+
+        gap: 2rem;
+    }
+
+    .bento-grid {
+        display: flex;
+        flex-direction: column;
+        gap: max(7vw, 3.5rem);
+
+        &>* {
+            border-radius: 0.9rem;
+        }
+    }
+
+
+    .hero {
+        padding: 13%;
+
+        & h1 {
+            margin-bottom: 8%;
+
+            font-size: max(12vw, 4.3rem);
+            line-height: max(12vw, 4.1rem);
+        }
+
+        & img {
+            max-width: 75%;
+
+            margin-bottom: 3%;
+        }
+
+        & p {
+            font-size: max(5vw, 1.5rem);
+        }
+    }
+
+    .feature-multiple-accounts {
+        padding: 6%;
+
+        & img {
+            max-width: 100%;
+        }
+
+        & h2 {
+            font-size: max(6.3vw, 2.5rem);
+            line-height: max(6.3vw, 2rem);
+        }
+    }
+
+    .feature-timeline {
+        position: relative;
+
+        padding: 6% 6% 0 6%;
+
+        & h2 {
+            margin-bottom: 4%;
+
+            font-size: max(6.3vw, 2.5rem);
+            line-height: max(6.3vw, 2rem);
+        }
+
+        & .image {
+            position: relative;
+
+            width: 100%;
+
+            padding-bottom: 45%;
+
+            & img {
+                position: absolute;
+                bottom: -10%;
+
+                width: 65%;
+            }
+        }
+    }
+
+    .feature-schedule {
+        padding: 10% 6%;
+
+        text-align: center;
+
+        & h2 {
+            margin-bottom: 8%;
+
+            font-size: max(6.3vw, 2.5rem);
+            line-height: max(6.3vw, 2rem);
+        }
+
+        & img {
+            max-width: 100%;
+
+            margin-bottom: 5%;
+        }
+
+        & p {
+            max-width: 80%;
+
+            margin: 0 auto;
+
+            font-size: max(4vw, 1.5rem);
+            line-height: max(4vw, 1.65rem);
+        }
+    }
+
+    .feature-growth {
+        padding: 8% 0 4%;
+
+        text-align: center;
+
+        flex-direction: column;
+        gap: 0;
+
+        & img {
+            max-width: 65%;
+
+            margin-bottom: 10%;
+        }
+
+        & h2 {
+            max-width: 68%;
+
+            margin-bottom: 4%;
+
+            font-size: max(7vw, 2.9rem);
+            line-height: max(7vw, 2.6rem);
+        }
+    }
+
+    .feature-engagement {
+        padding: 7%;
+
+        & h2 {
+            margin-bottom: 8%;
+
+            font-size: max(4.3vw, 1.5rem);
+
+            & span {
+                display: block;
+
+                margin-bottom: 4%;
+
+                font-size: max(12vw, 4.3rem);
+                line-height: max(12vw, 4.1rem);
+            }
+        }
+
+        & img {
+            max-width: 65%;
+        }
+    }
+
+    .feature-quick-create {
+        padding: 8% 8% 6% 8%;
+
+        & h2 {
+            margin-bottom: 8%;
+
+            font-size: max(7vw, 2.9rem);
+            line-height: max(7vw, 2.6rem);
+        }
+
+        & img {
+            max-width: 70%;
+        }
+       
+    }
+
+    .feature-ai {
+        padding: 7%;
+
+        & h2 {
+            max-width: 95%;
+            
+            margin-bottom: 9%;
+
+            font-size: max(7vw, 2.9rem);
+            line-height: max(7vw, 2.6rem);
+        }
+
+        & img {
+            max-width: 75%;
+        }
+    }
+
+    .site-footer {
+        padding: 2%;
+        
+        font-size: max(1.2rem, 3vw);
+        line-height: max(1rem, 3vw);
+    }
+}
