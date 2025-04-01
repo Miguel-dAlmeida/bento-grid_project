@@ -5,17 +5,27 @@ html {
 body {
     min-width: 100vw;
     min-height: 100vh;
-
+    
     padding: 6% 10% 0;
+    overflow-x: hidden;
 
     font-family: 'DM Sans', sans-serif;
     font-size: 1.8rem;
 
     background-color: #f5f5f5;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 5rem;
 }
@@ -23,12 +33,10 @@ body {
 .bento-grid {
     max-width: 1500px;
 
+    display: -ms-grid;
     display: grid;
     grid:
-        "feature-quick-create hero hero feature-schedule" auto
-        "feature-quick-create feature-multiple-accounts feature-timeline feature-schedule" 0.6fr
-        "feature-ai feature-multiple-accounts feature-timeline feature-schedule" auto
-        "feature-ai feature-engagement feature-growth feature-growth" auto / 1fr 1fr 1fr 1fr;
+        "feature-quick-create hero hero feature-schedule" auto "feature-quick-create feature-multiple-accounts feature-timeline feature-schedule" 0.6fr "feature-ai feature-multiple-accounts feature-timeline feature-schedule" auto "feature-ai feature-engagement feature-growth feature-growth" auto / 1fr 1fr 1fr 1fr;
     gap: min(2.2vw, 3.5rem);
 
     &>* {
@@ -46,9 +54,18 @@ body {
 
     background-color: hsl(256, 67%, 59%);
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     grid-area: hero;
@@ -80,7 +97,7 @@ body {
 }
 
 .feature-multiple-accounts {
-    padding: 8%;    
+    padding: 8%;
     background-color: hsl(0, 0%, 100%);
 
     grid-area: feature-multiple-accounts;
@@ -102,7 +119,7 @@ body {
 
 .feature-timeline {
     padding: 8%;
-    
+
     background-color: hsl(39, 100%, 71%);
 
     grid-area: feature-timeline;
@@ -152,8 +169,12 @@ body {
     background-color: hsl(256, 67%, 59%);
 
     grid-area: feature-growth;
-    
+
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: min(0.8vw, 2rem);
 
@@ -185,7 +206,7 @@ body {
 
         & span {
             display: block;
-            
+
             font-size: min(4.5vw, 8.5rem);
             font-weight: 500;
         }
@@ -198,7 +219,7 @@ body {
 
 .feature-quick-create {
     padding: 30% 11%;
-    
+
     background-color: hsl(31, 66%, 93%);
 
     grid-area: feature-quick-create;
@@ -226,7 +247,7 @@ body {
 
     & h2 {
         margin-bottom: 23%;
-        
+
         font-size: min(3.3vw, 5.5rem);
         font-weight: 500;
         line-height: min(2.9vw, 5rem);
@@ -246,6 +267,8 @@ body {
         font-weight: 500;
         color: hsl(256, 67%, 59%);
 
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
         transition: 0.6s;
 
         &:hover {
@@ -264,23 +287,3 @@ body.no-scroll {
         background-color: #f5f5f5;
     }
 }
-
-
-
-
-
-
-/* .image {
-    width: 100%;
-    padding-top: 56.25%;  
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .image img {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */

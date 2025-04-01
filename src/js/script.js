@@ -7,6 +7,5 @@ function checkNoVerticalScroll() {
   }
 }
 
-// Executa ao carregar a página e ao redimensionar a janela
 checkNoVerticalScroll();
 window.addEventListener("resize", checkNoVerticalScroll);

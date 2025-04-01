@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Preload de recursos críticos -->
-  <link rel="preload" href="./src/images/illustration-five-stars.webp" as="image">
-  <link rel="preload" href="https://fonts.gstatic.com/s/dmsans/v14/rH_qdk5Oy-rW0NqyclFR.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Preloads -->
+  <link rel="preload" href="path/to/fonte-principal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./images/hero-image.webp" as="image">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./src/css/reset.css">
@@ -15,11 +15,10 @@
   <link rel="stylesheet" href="./src/css/responsive.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="./src/images/favicon-32x32.png" type="image/x-icon">  
-  
+  <link rel="icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
   <!-- Fonts -->
-  <link 
-  rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
@@ -38,7 +37,7 @@
     </header>
 
     <section class="feature-multiple-accounts">
-      <img src="./src/images/illustration-multiple-platforms.webp"
+      <img loading="lazy" src="./src/images/illustration-multiple-platforms.webp"
         alt="Ícones do Instagram e Twitter lado a lado, com nome de usuário e número de seguidores fictícios.">
       <h2>Manage multiple accounts and platforms.</h2>
     </section>
@@ -46,35 +45,35 @@
     <section class="feature-timeline">
       <h2>Maintain a consistent posting schedule.</h2>
       <div class="image">
-        <img src="./src/images/illustration-consistent-schedule.webp" aria-hidden="true">
+        <img loading="lazy" src="./src/images/illustration-consistent-schedule.webp" aria-hidden="true">
       </div>
     </section>
 
 
     <section class="feature-schedule">
       <h2>Schedule to social media.</h2>
-      <img src="./src/images/illustration-schedule-posts.webp" aria-hidden="true">
+      <img loading="lazy" src="./src/images/illustration-schedule-posts.webp" aria-hidden="true">
       <p>Optimize post timings to publish content at the perfect time for your audience.</p>
     </section>
 
     <section class="feature-growth">
-      <img src="./src/images/illustration-grow-followers.webp" aria-hidden="true">
+      <img loading="lazy" src="./src/images/illustration-grow-followers.webp" aria-hidden="true">
       <h2>Grow followers with non-stop content.</h2>
     </section>
 
     <section class="feature-engagement">
       <h2><span>>56%</span> faster audience growth</h2>
-      <img src="./src/images/illustration-audience-growth.webp" aria-hidden="true">
+      <img loading="lazy" src="./src/images/illustration-audience-growth.webp" aria-hidden="true">
     </section>
 
     <section class="feature-quick-create">
       <h2>Create and schedule content <span>quicker.</span></h2>
-      <img src="./src/images/illustration-create-post.webp" aria-hidden="true">
+      <img loading="lazy" src="./src/images/illustration-create-post.webp" aria-hidden="true">
     </section>
 
     <section class="feature-ai">
       <h2>Write your content using AI.</h2>
-      <img src="./src/images/illustration-ai-content.webp" aria-hidden="true">
+      <img loading="lazy" src="./src/images/illustration-ai-content.webp" aria-hidden="true">
     </section>
   </main>
 
@@ -90,7 +89,7 @@
     </p>
   </footer>
 
-  
+
   <script src="./src/js/script.js"></script>
 </body>
 
